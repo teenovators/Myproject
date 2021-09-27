@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: Poppins;
+}
+
+
+.navbar-fixed-top,
+.navbar-fixed-top.bottom {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: inherit;
+    padding: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    font-family: 'Raleway' , sans-serif ;
+}
+
+.navbar-fixed-top .navbar-brand,
+.navbar-fixed-top .navbar-nav>li>a {
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar-fixed-top .navbar-nav>li>a:hover {
+    color: #008ED6;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-fixed-top .navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-fixed-top.bottom .navbar-brand,
+.navbar-fixed-top.bottom .navbar-nav>li>a {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-fixed-top .navbar-nav>li>a:hover {
+    color: #008ED6;
+}
+
+.navbar-fixed-top .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-fixed-top .navbar-toggle .icon-bar {
+    background-color: #aaa;
+}
+
+.navbar-fixed-top .navbar-toggle:hover .icon-bar,
+.navbar-fixed-top .navbar-toggle:focus .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-fixed-top .navbar-toggle:hover,
+.navbar-fixed-top .navbar-toggle:focus {
+    background-color: #008ED6;
+}
+
+@media (min-width:768px) {
+    .navbar-fixed-top {
+        background-color: rgba(255, 255, 255, 0.95);
+        border: none;
+        margin: 0;
+        padding: 0px 0 !important;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        transition: .2s;
+    }
+
+    .navbar-fixed-top.bottom {
+        background-color: rgba(21, 21, 21, 0.51);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: inherit;
+        box-shadow: 0 0 0;
+    }
+
+    .navbar-fixed-top .navbar-nav>li>a {
+        color: black;
+        font-weight: 700;
+    }
+
+    .navbar-fixed-top.bottom .navbar-brand,
+    .navbar-fixed-top.bottom .navbar-nav>li>a {
+        color: #fff;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar-fixed-top {
+        background-color: rgba(21, 21, 21, 0.51);
+        border: none;
+        margin: 0;
+        padding: 5px 0 !important;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        transition: .2s;
+    }
+
+    .navbar-fixed-top.bottom {
+        background-color: rgba(21, 21, 21, 0.51);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: inherit;
+        box-shadow: 0 0 0;
+    }
+
+    .navbar-fixed-top .navbar-brand,
+    .navbar-fixed-top .navbar-nav>li>a {
+        color: white;
+        font-weight: 700;
+    }
+
+    .navbar-fixed-top.bottom .navbar-brand,
+    .navbar-fixed-top.bottom .navbar-nav>li>a {
+        color: white;
+        font-weight: 700;
+    }
+}

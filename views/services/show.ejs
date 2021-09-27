@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <link href="/stylesheets/navbar.css" rel="stylesheet">
+  <link href="/stylesheets/footer.css" rel="stylesheet">
+
+
+  <title><%= services.heading%></title>
+
+<link href="/stylesheets/main.550dcf66.css" rel="stylesheet"></head>
+
+<body>
+<div class="container-fluid">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/tenovaters">Tenovaters</a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/tenovaters">Home</a></li>
+                        <li><a href="/tenovaters/ourproduct">Our Product</a></li>
+                        <li><a href="/tenovaters/services">Services</a></li>
+                        <li><a href="/tenovaters/features">Careers</a></li>
+                        <li><a href="/tenovaters/contact">Contact</a></li>
+                        <% if(!currentUser){ %>
+                            
+                        <% } else { %>
+                            <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+                            <li><a href="/tenovaters/logout">Logout</a></li>
+                        <% } %>
+                    </ul>
+                </div> 
+            </div> 
+        </nav>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <div id="query-form">
+                    <div class="container-contact100">
+                        <div class="wrap-contact100">
+                            <a href="/tenovaters/ourproduct" class="popup-close">&times</a>
+                            <form class="contact100-form validate-form" id="contact-form" action="/tenovaters" method="POST">
+                                <span class="contact100-form-title">
+                                    Send Us A Query
+                                </span>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                                    <input id="name" class="input100" type="text" name="name" placeholder="Full Name">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x">
+                                    <input id="email" class="input100" type="text" name="email" placeholder="E-mail">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
+                                    <input id="phone" class="input100" type="text" name="phone" placeholder="Phone">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                                    <textarea id="query" class="input100" name="query" placeholder="Your Query"></textarea>
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="container-contact100-form-btn">
+                                    <button class="contact100-form-btn" id="query-button">
+                                        <span>
+                                            <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                                            Send
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="dropDownSelect1"></div>
+                </div>
+            </div>
+        </div>
+        
+<div class="section-container" style="margin-top: 4rem;">
+  <div class="container">
+                <% if(error && error.length > 0) { %>
+                 <div class="alert alert-danger"><p><%=error %></p></div>
+                <% } %>
+               
+                <% if(success && success.length > 0) { %>
+                  <div class="alert alert-success"><p><%= success %></p></div>
+                <% } %>
+            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h1 class="text-center"><%= services.heading%></h1>
+          <p><%= services.subdesc.substring(0,400)%></p>
+          
+          <div class="section-container-spacer">
+            <img src="<%= services.image1%>" alt="" class="img-responsive reveal-content" data-action="zoom">
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="<%= services.image2%>" alt="" class="img-responsive reveal-content" data-action="zoom">
+            </div>
+            <div class="col-xs-6">
+              <img src="<%= services.image3%>" alt="" class="img-responsive reveal-content" data-action="zoom">
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row section-container-spacer">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h2 class="text-center">More</h2>
+          <div class="section-container-spacer">
+            <p><%= services.subdesc.substring(401,500)%></p>
+            <p><%= services.subdesc.substring(501)%></p>
+          </div>  
+          <img src="<%= services.image4%>" alt="" class="img-responsive reveal-content" data-action="zoom">
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="footer">
+        <div class="top">
+            <div class="left">
+                <h4 class="footer-logo">Tenovaters</h4><br>
+                <div class="footer-content">
+                    <a class="footerlink"><i id="fa" class="fa fa-facebook-square"></i></a>
+                    <a class="footerlink"><i id="fa" class="fa fa-twitter-square"></i></a>
+                    <a class="footerlink"><i id="fa" class="fa fa-instagram"></i></a>
+                    <a class="footerlink"><i id="fa" class="fa fa-linkedin-square"></i></a>
+                    <p class="email">Email: contact.tenovaters@gmail.com</p>
+                    
+                </div>
+            </div>
+            <div class="middle1">
+                <h4 class="link1">COMPANY</h4><br>
+                <div class="footer-content">
+                    <a class="footer-link" href="/tenovaters">Home</a><br>
+                    <a class="footer-link" href="/tenovaters/services">Services</a><BR>
+                    <a class="footer-link" href="/tenovaters/ourproduct">Our Product</a><br>
+                    <a class="footer-link" href="/tenovaters/contactus">Contact Us</a><br>
+                    <a class="footer-link" href="/tenovaters/features">Careers</a><br>
+                </div>
+            </div>
+            <div class="right">
+                <h4 class="link1">POLICY</h4><br>
+                <div class="footer-content">
+                    <a class="footer-link">Terms And Conditions</a><br>
+                    <a class="footer-link">Security</a><br>
+                    <a class="footer-link">Cookies</a><br>
+                    <a class="footer-link">Privacy Policy</a><br>
+                    <a class="footer-link">Anti Spam Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <p class="copyright">Copyright@2021, Tenovaters. All Rights Reserved.</p>
+        </div>
+    </section>
+    <a href="#popup" id="back-to-top" class="back-to-top"><i class="fa fa-comments"></i></a>
+<script type="text/javascript" src="/scripts/main.0cf8b554.js"></script></body>
+<script type="text/javascript" src="/scripts/validation.js"></script>
+</body>
+</html>

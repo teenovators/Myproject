@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: Poppins;
+}
+.row{
+    height: 100vh;  
+}
+#job-content{
+    padding: 2rem ;
+    padding-left: 8rem;
+    padding-right: 4rem;
+}
+.flickimg{
+    margin-top: -20rem;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+
+}
+.flickity-page-dots{
+    display: none;
+}
+
+#job-links{
+    padding: 4rem 0rem;
+    padding-top: 10rem;
+}
+.job-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: Poppins;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.job-link{
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ececec;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px 2px #ececec;
+}
+.job-text{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: rgba(0, 0, 0, .7);
+}
+#apply{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+.footer {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    line-height: 21px;
+}
+
+.top {
+    height: 268px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.email{
+    color: white;
+}
+
+.getapp{
+    color: white;
+}
+.your {
+    color: #FCA311;
+}
+
+.biz {
+    color: red;
+}
+
+.left {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.middle1 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.middle2 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.right {
+    font-size: 14;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .9);
+    height: 56px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.footer-logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 36px;
+    width: 109px;
+    height: 28px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.link1 {
+    font-size: 18px !important;
+    font-weight: 700;
+    line-height: 27px;
+    color: white;
+}
+.copyright{
+    color: white;
+    font-weight: 1.5rem;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    margin-top: -10px;
+}
+
+#fa {
+    font-size: 2em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+}
+
+.getapp {
+    display: flex;
+}
+
+.playstore {
+    display: inline-block;
+    margin-left: .75em;
+    margin-right: .75em;
+}
+
+.ios {
+    display: inline-block;
+}
+.footer {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    line-height: 21px;
+}
+
+.top {
+    height: 268px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.email{
+    color: white;
+}
+
+.getapp{
+    color: white;
+}
+.your {
+    color: #FCA311;
+}
+
+.biz {
+    color: red;
+}
+
+.left {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.middle1 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.middle2 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.right {
+    font-size: 14;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .9);
+    height: 56px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.footer-logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 36px;
+    width: 109px;
+    height: 28px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.link1 {
+    font-size: 18px !important;
+    font-weight: 700;
+    line-height: 27px;
+    color: white;
+}
+.copyright{
+    color: white;
+    font-weight: 1.5rem;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    margin-top: -10px;
+}
+
+#fa {
+    font-size: 2em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+}
+
+.getapp {
+    display: flex;
+}
+
+.playstore {
+    display: inline-block;
+    margin-left: .75em;
+    margin-right: .75em;
+}
+
+.ios {
+    display: inline-block;
+}
+.footer-link{
+    color: white;
+    cursor: pointer;
+}
+
+p {
+  hyphens: auto;
+}
+
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

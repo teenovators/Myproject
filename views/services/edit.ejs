@@ -1,0 +1,27 @@
+<%- include ("../partials/header") %>
+    <div class="row" style="margin-top:10rem;">
+        <h1 style="text-align: center">Edit Services</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/tenovaters/services/<%= services._id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="heading" placeholder="heading" value = "<%= services.heading%>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="file" name="image" placeholder="image url" value = "<%= services.image1%>" multiple>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="maindesc" placeholder="description of 200 words" value = "<%= services.maindesc%>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="subdesc 1000 words" placeholder="description" value = "<%= services.subdesc%>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/tenovaters">Go Back</a>
+        </div>
+    </div>
+
+
+<%- include ("../partials/footer") %>

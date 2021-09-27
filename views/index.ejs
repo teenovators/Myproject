@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenovaters</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/stylesheets/animate.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+    <script type="text/javascript" src="/scripts/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/plugins.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <section id="header">
+            <div class="container">
+                <% if(error && error.length > 0) { %>
+                 <div class="alert alert-danger"><p><%=error %></p></div>
+                <% } %>
+               
+                <% if(success && success.length > 0) { %>
+                  <div class="alert alert-success"><p><%= success %></p></div>
+                <% } %>
+            </div>
+            <nav class="navbar navbar-fixed-top navbar-default bottom">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/tenovaters">Tenovaters</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/tenovaters">Home</a></li>
+                            <li><a href="/tenovaters/ourproduct">Our Product</a></li>
+                            <li><a href="/tenovaters/services">Services</a></li>
+                            <li><a href="/tenovaters/features">Careers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <% if(!currentUser){ %>
+                                
+                            <% } else { %>
+                                <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+                                <li><a href="/tenovaters/logout">Logout</a></li>
+                            <% } %>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
+            <div class="header-slide">
+                <section>
+                    <div class="carousel" data-flickity>
+                        <div class="carousel-cell">
+                            <div class="image1">
+                                <div class="image-slide bg-fixed">
+                                    <div class="overlay">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="slider-content">
+                                                        <h1>HEADING</h1>
+                                                        <p>SUB HEADING</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="image1">
+                                <div class="image-slide bg-fixed">
+                                    <div class="overlay">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="slider-content">
+                                                        <h1>HEADING</h1>
+                                                        <p>SUB HEADING</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="image1">
+                                <div class="image-slide bg-fixed">
+                                    <div class="overlay">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="slider-content">
+                                                        <h1>HEADING</h1>
+                                                        <p>SUB HEADING</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="image1">
+                                <div class="image-slide bg-fixed">
+                                    <div class="overlay">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="slider-content">
+                                                        <h1>HEADING</h1>
+                                                        <p>SUB HEADING</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="image1">
+                                <div class="image-slide bg-fixed">
+                                    <div class="overlay">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="slider-content">
+                                                        <h1>HEADING</h1>
+                                                        <p>SUB HEADING</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h3 id="about-us">About <span>US</span></h3>
+                <div class="row">
+                    <div id="column" class="col-sm-6 col-lg-4">
+                        <div class="about-imag">
+                            <img src="/images/p-6.png" alt="company image" />
+                        </div>
+                    </div>
+                    <div id="column" class="col-sm-6 col-lg-8">
+                        <div class="about-text">
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="padd-section wow fadeInUp">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Contact Us</h2>
+                    <p class="separator">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                <p>Address<br>street town</p>
+                            </div>
+                            <div class="email">
+                                <i class="fa fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <p>+8923928920475842</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-8">
+                        <div class="form">
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+                            <form action="/" method="post" role="form" class="contactForm">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <div id="query-form">
+                    <div class="container-contact100">
+                        <div class="wrap-contact100">
+                            <a href="/tenovaters" class="popup-close">&times</a>
+                            <form class="contact100-form validate-form" id="contact-form" action="/tenovaters" method="POST">
+                                <span class="contact100-form-title">
+                                    Send Us A Query
+                                </span>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                                    <input id="name" class="input100" type="text" name="name" placeholder="Full Name">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x">
+                                    <input id="email" class="input100" type="text" name="email" placeholder="E-mail">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
+                                    <input id="phone" class="input100" type="text" name="phone" placeholder="Phone">
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                                    <textarea id="query" class="input100" name="query" placeholder="Your Query"></textarea>
+                                    <span class="focus-input100"></span>
+                                </div>
+                                <div class="container-contact100-form-btn">
+                                    <button class="contact100-form-btn" id="query-button">
+                                        <span>
+                                            <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                                            Send
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="dropDownSelect1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="top">
+            <div class="left">
+                <h4 class="footer-logo">Tenovaters</h4><br>
+                <div class="footer-content">
+                    <a class="footerlink"><i id="fa" class="fa fa-facebook-square"></i></a>
+                    <a class="footerlink"><i id="fa" class="fa fa-twitter-square"></i></a>
+                    <a class="footerlink"><i id="fa" class="fa fa-instagram"></i></a>
+                    <a class="footerlink"><i id="fa" class="fa fa-linkedin-square"></i></a>
+                    <p class="email">Email: contact.tenovaters@gmail.com</p>
+                    
+                </div>
+            </div>
+            <div class="middle1">
+                <h4 class="link1">COMPANY</h4><br>
+                <div class="footer-content">
+                    <a class="footer-link" href="/tenovaters">Home</a><br>
+                    <a class="footer-link" href="/tenovaters/services">Services</a><BR>
+                    <a class="footer-link" href="/tenovaters/ourproduct">Our Product</a><br>
+                    <a class="footer-link" href="/tenovaters/contactus">Contact Us</a><br>
+                    <a class="footer-link" href="/tenovaters/features">Careers</a><br>
+                </div>
+            </div>
+            <div class="right">
+                <h4 class="link1">POLICY</h4><br>
+                <div class="footer-content">
+                    <a class="footer-link">Terms And Conditions</a><br>
+                    <a class="footer-link">Security</a><br>
+                    <a class="footer-link">Cookies</a><br>
+                    <a class="footer-link">Privacy Policy</a><br>
+                    <a class="footer-link">Anti Spam Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <p class="copyright">Copyright@2021, Tenovaters. All Rights Reserved.</p>
+        </div>
+    </section>
+    <a href="#popup" id="back-to-top" class="back-to-top"><i class="fa fa-comments"></i></a>
+
+    <script type="text/javascript" src="/scripts/header.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<% if(currentUser && (currentUser.username === "tenovaters.admin")){ %>
+    <li><a href="/tenovaters/logout">Logout</a></li>
+<% } %>
+
+
+
+<% if(currentUser && (currentUser.username === "tenovaters.admin")){ %>
+    <a href="/tenovaters/services/:<%=services._id%>/edit" class="btn btn-warning">Edit</a>
+    <a href="#" class="btn btn-danger">Delete</a>
+<% } %>

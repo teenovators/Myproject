@@ -1,0 +1,27 @@
+<%- include ("../partials/header") %>
+    <div class="row" style="margin-top:10rem;">
+        <h1 style="text-align: center">Edit Features</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/tenovaters/features/<%=features._id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                  heading:  <input class="form-control" type="text" name="heading" placeholder="heading" value="<%= features.heading%>">
+                </div>
+                <div class="form-group">
+                   imageUrl: <input class="form-control" type="file" name="image" placeholder="image url" value="<%= features.image%>" multiple>
+                </div>
+                <div class="form-group">
+                   decription 100 words: <input class="form-control" type="text" name="maindesc" placeholder="maindesc of 100 words" value="<%= features.maindesc%>">
+                </div>
+                <div class="form-group">
+                   decription 1000 words: <input class="form-control" type="text" name="subdesc" placeholder="subdesc of 1000 words" value="<%= features.subdesc%>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/tenovaters/features">Go Back</a>
+        </div>
+    </div>
+
+
+<%- include ("../partials/footer") %>

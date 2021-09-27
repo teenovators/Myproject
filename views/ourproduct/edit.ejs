@@ -1,0 +1,29 @@
+<%- include ("../partials/header") %>
+    <div class="row" style="margin-top:10rem;">
+        <h1 style="text-align: center">Add new product</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/tenovaters/ourproduct/<%=ourproduct._id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    imageUrl: <input class="form-control" type="file" name="image" placeholder="image url" value="<%=ourproduct.image%>" multiple>
+                </div>
+                <div class="form-group">
+                    heading: <input class="form-control" type="text" name="heading" placeholder="heading" value="<%=ourproduct.heading%> ">
+                </div>
+                <div class="form-group">
+                    description 100 words: <input class="form-control" id="exampleFormControlTextarea1" type="text" name="maindesc" placeholder="desciption 100 words" value=" <%=ourproduct.desc%>">
+                </div>
+                <div class="form-group">
+                    description 1000 words: <input class="form-control" id="exampleFormControlTextarea1" type="text" name="subdesc" placeholder="desciption 1000 words" value=" <%=ourproduct.subdesc%>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/tenovaters">Go Back</a>
+        </div>
+    </div>
+
+
+<%- include ("../partials/footer") %>
+
+
